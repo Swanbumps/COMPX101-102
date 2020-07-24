@@ -1,0 +1,29 @@
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.exe.config
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.exe
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.pdb
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csprojAssemblyReference.cache
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.Form1.resources
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.Properties.Resources.resources
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csproj.GenerateResource.cache
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.exe
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.pdb
+G:\My Drive\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csproj.CoreCompileInputs.cache
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.exe.config
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.exe
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.pdb
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csprojAssemblyReference.cache
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.Form1.resources
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.Properties.Resources.resources
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csproj.GenerateResource.cache
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csproj.CoreCompileInputs.cache
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.exe
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.pdb
+H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.exe.config
+H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.exe
+H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.pdb
+H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csprojAssemblyReference.cache
+H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.Form1.resources
+H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.Properties.Resources.resources
+H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csproj.GenerateResource.cache
+H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.exe
+H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.pdb
