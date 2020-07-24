@@ -1,0 +1,19 @@
+G:\My Drive\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\bin\Debug\Week 2 A.exe.config
+G:\My Drive\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\bin\Debug\Week 2 A.exe
+G:\My Drive\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\bin\Debug\Week 2 A.pdb
+G:\My Drive\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week 2 A.csprojAssemblyReference.cache
+G:\My Drive\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week_2_A.Form1.resources
+G:\My Drive\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week_2_A.Properties.Resources.resources
+G:\My Drive\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week 2 A.csproj.GenerateResource.cache
+G:\My Drive\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week 2 A.exe
+G:\My Drive\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week 2 A.pdb
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\bin\Debug\Week 2 A.exe.config
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\bin\Debug\Week 2 A.exe
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\bin\Debug\Week 2 A.pdb
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week 2 A.csprojAssemblyReference.cache
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week_2_A.Form1.resources
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week_2_A.Properties.Resources.resources
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week 2 A.csproj.GenerateResource.cache
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week 2 A.csproj.CoreCompileInputs.cache
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week 2 A.exe
+C:\Googls drive sync\University stuff\COMPX101\Week 2 A\Week 2 A\Week 2 A\obj\Debug\Week 2 A.pdb
