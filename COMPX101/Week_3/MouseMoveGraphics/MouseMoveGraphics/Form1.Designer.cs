@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.pictureBoxDisplay = new System.Windows.Forms.PictureBox();
+            this.buttonSetColour = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplay)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,11 +44,22 @@
             this.pictureBoxDisplay.Click += new System.EventHandler(this.pictureBoxDisplay_Click);
             this.pictureBoxDisplay.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxDisplay_MouseMove);
             // 
+            // buttonSetColour
+            // 
+            this.buttonSetColour.Location = new System.Drawing.Point(964, 606);
+            this.buttonSetColour.Name = "buttonSetColour";
+            this.buttonSetColour.Size = new System.Drawing.Size(75, 23);
+            this.buttonSetColour.TabIndex = 1;
+            this.buttonSetColour.Text = "Set Colour";
+            this.buttonSetColour.UseVisualStyleBackColor = true;
+            this.buttonSetColour.Click += new System.EventHandler(this.buttonSetColour_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1252, 652);
+            this.Controls.Add(this.buttonSetColour);
             this.Controls.Add(this.pictureBoxDisplay);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(20);
@@ -59,6 +72,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBoxDisplay;
+        private System.Windows.Forms.Button buttonSetColour;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 

@@ -28,5 +28,10 @@ namespace MouseMoveGraphics
         {
 
         }
+
+        private void buttonSetColour_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+        }
     }
 }
