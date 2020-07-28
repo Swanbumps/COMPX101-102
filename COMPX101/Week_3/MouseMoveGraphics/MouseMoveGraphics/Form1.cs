@@ -20,7 +20,7 @@ namespace MouseMoveGraphics
         private void pictureBoxDisplay_MouseMove(object sender, MouseEventArgs e)
         {
             Graphics paper = pictureBoxDisplay.CreateGraphics();
-            Pen pen1 = new Pen(Color.Purple, 2);
+            Pen pen1 = new Pen(colorDialog1.Color, 2);
             paper.DrawLine(pen1, 625, 325, e.X, e.Y);
         }
 
