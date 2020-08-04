@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxWidth = new System.Windows.Forms.TextBox();
-            this.textBoxLength = new System.Windows.Forms.TextBox();
             this.textBoxDepth = new System.Windows.Forms.TextBox();
             this.textBoxVolume = new System.Windows.Forms.TextBox();
             this.textBoxBags = new System.Windows.Forms.TextBox();
@@ -43,25 +41,16 @@
             this.buttonCalculate = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.textBoxKgs = new System.Windows.Forms.TextBox();
+            this.labelKgs = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxWidth = new System.Windows.Forms.TextBox();
+            this.textBoxLength = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // textBoxWidth
-            // 
-            this.textBoxWidth.Location = new System.Drawing.Point(127, 12);
-            this.textBoxWidth.Name = "textBoxWidth";
-            this.textBoxWidth.Size = new System.Drawing.Size(100, 20);
-            this.textBoxWidth.TabIndex = 0;
-            // 
-            // textBoxLength
-            // 
-            this.textBoxLength.Location = new System.Drawing.Point(127, 38);
-            this.textBoxLength.Name = "textBoxLength";
-            this.textBoxLength.Size = new System.Drawing.Size(100, 20);
-            this.textBoxLength.TabIndex = 1;
             // 
             // textBoxDepth
             // 
-            this.textBoxDepth.Location = new System.Drawing.Point(127, 65);
+            this.textBoxDepth.Location = new System.Drawing.Point(57, 64);
             this.textBoxDepth.Name = "textBoxDepth";
             this.textBoxDepth.ReadOnly = true;
             this.textBoxDepth.Size = new System.Drawing.Size(100, 20);
@@ -69,7 +58,7 @@
             // 
             // textBoxVolume
             // 
-            this.textBoxVolume.Location = new System.Drawing.Point(359, 12);
+            this.textBoxVolume.Location = new System.Drawing.Point(289, 12);
             this.textBoxVolume.Name = "textBoxVolume";
             this.textBoxVolume.ReadOnly = true;
             this.textBoxVolume.Size = new System.Drawing.Size(100, 20);
@@ -77,7 +66,7 @@
             // 
             // textBoxBags
             // 
-            this.textBoxBags.Location = new System.Drawing.Point(359, 37);
+            this.textBoxBags.Location = new System.Drawing.Point(289, 64);
             this.textBoxBags.Name = "textBoxBags";
             this.textBoxBags.ReadOnly = true;
             this.textBoxBags.Size = new System.Drawing.Size(100, 20);
@@ -85,7 +74,7 @@
             // 
             // textBoxCost
             // 
-            this.textBoxCost.Location = new System.Drawing.Point(359, 64);
+            this.textBoxCost.Location = new System.Drawing.Point(289, 90);
             this.textBoxCost.Name = "textBoxCost";
             this.textBoxCost.ReadOnly = true;
             this.textBoxCost.Size = new System.Drawing.Size(100, 20);
@@ -94,7 +83,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 15);
+            this.label1.Location = new System.Drawing.Point(16, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 6;
@@ -103,7 +92,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(81, 40);
+            this.label2.Location = new System.Drawing.Point(11, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 7;
@@ -112,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(86, 68);
+            this.label3.Location = new System.Drawing.Point(16, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 8;
@@ -121,7 +110,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(281, 15);
+            this.label4.Location = new System.Drawing.Point(211, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 13);
             this.label4.TabIndex = 9;
@@ -130,7 +119,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(268, 40);
+            this.label5.Location = new System.Drawing.Point(198, 67);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 13);
             this.label5.TabIndex = 10;
@@ -139,7 +128,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(295, 67);
+            this.label6.Location = new System.Drawing.Point(225, 93);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 13);
             this.label6.TabIndex = 11;
@@ -147,7 +136,7 @@
             // 
             // buttonCalculate
             // 
-            this.buttonCalculate.Location = new System.Drawing.Point(89, 98);
+            this.buttonCalculate.Location = new System.Drawing.Point(84, 124);
             this.buttonCalculate.Name = "buttonCalculate";
             this.buttonCalculate.Size = new System.Drawing.Size(75, 23);
             this.buttonCalculate.TabIndex = 12;
@@ -157,7 +146,7 @@
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(209, 98);
+            this.buttonClear.Location = new System.Drawing.Point(165, 124);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 13;
@@ -167,7 +156,7 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(325, 98);
+            this.buttonExit.Location = new System.Drawing.Point(246, 124);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(75, 23);
             this.buttonExit.TabIndex = 14;
@@ -175,26 +164,69 @@
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // textBoxKgs
+            // 
+            this.textBoxKgs.Location = new System.Drawing.Point(289, 38);
+            this.textBoxKgs.Name = "textBoxKgs";
+            this.textBoxKgs.ReadOnly = true;
+            this.textBoxKgs.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKgs.TabIndex = 5;
+            // 
+            // labelKgs
+            // 
+            this.labelKgs.AutoSize = true;
+            this.labelKgs.Location = new System.Drawing.Point(204, 41);
+            this.labelKgs.Name = "labelKgs";
+            this.labelKgs.Size = new System.Drawing.Size(78, 13);
+            this.labelKgs.TabIndex = 11;
+            this.labelKgs.Text = "Kgs of cement:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(11, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Length:";
+            // 
+            // textBoxWidth
+            // 
+            this.textBoxWidth.Location = new System.Drawing.Point(57, 12);
+            this.textBoxWidth.Name = "textBoxWidth";
+            this.textBoxWidth.Size = new System.Drawing.Size(100, 20);
+            this.textBoxWidth.TabIndex = 15;
+            // 
+            // textBoxLength
+            // 
+            this.textBoxLength.Location = new System.Drawing.Point(57, 37);
+            this.textBoxLength.Name = "textBoxLength";
+            this.textBoxLength.Size = new System.Drawing.Size(100, 20);
+            this.textBoxLength.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 134);
+            this.ClientSize = new System.Drawing.Size(400, 153);
+            this.Controls.Add(this.textBoxLength);
+            this.Controls.Add(this.textBoxWidth);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonCalculate);
+            this.Controls.Add(this.labelKgs);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxKgs);
             this.Controls.Add(this.textBoxCost);
             this.Controls.Add(this.textBoxBags);
             this.Controls.Add(this.textBoxVolume);
             this.Controls.Add(this.textBoxDepth);
-            this.Controls.Add(this.textBoxLength);
-            this.Controls.Add(this.textBoxWidth);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -204,9 +236,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBoxWidth;
-        private System.Windows.Forms.TextBox textBoxLength;
         private System.Windows.Forms.TextBox textBoxDepth;
         private System.Windows.Forms.TextBox textBoxVolume;
         private System.Windows.Forms.TextBox textBoxBags;
@@ -220,6 +249,11 @@
         private System.Windows.Forms.Button buttonCalculate;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.TextBox textBoxKgs;
+        private System.Windows.Forms.Label labelKgs;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxWidth;
+        private System.Windows.Forms.TextBox textBoxLength;
     }
 }
 
