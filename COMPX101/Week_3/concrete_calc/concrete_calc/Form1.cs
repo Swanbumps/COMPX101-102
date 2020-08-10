@@ -23,6 +23,7 @@ namespace concrete_calc
         public Form1()
         {
             InitializeComponent();
+            textBoxWidth.Focus();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,16 +41,16 @@ namespace concrete_calc
                 double Width = double.Parse(textBoxWidth.Text);
                 //calculate/show volume
                 double Volume = Length * Width * DRIVEWAY_DEPTH;
-                textBoxVolume.Text = Volume.ToString();
+                textBoxVolume.Text = Math.Round(Volume, 3).ToString();
                 //calculate/show kgs of cement
                 double Weight = Volume / CONCRETE_PER_KG;
-                textBoxKgs.Text = Weight.ToString();
+                textBoxKgs.Text = Math.Round(Weight,3).ToString();
                 //calculate/show bags of cement
-                double Bags = Weight / BAG_WEIGHT;
+                int Bags = (int)Math.Ceiling(Weight / BAG_WEIGHT);
                 textBoxBags.Text = Bags.ToString();
                 //calculate/show cost
                 decimal Cost = (decimal)Bags * BAG_COST;
-                textBoxCost.Text = Cost.ToString();
+                textBoxCost.Text = Cost.ToString("c");
             }
             catch(Exception ex)
             {
