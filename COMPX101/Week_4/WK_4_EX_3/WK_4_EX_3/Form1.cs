@@ -16,5 +16,38 @@ namespace WK_4_EX_3
         {
             InitializeComponent();
         }
+
+        private void buttonPower_Click(object sender, EventArgs e)
+        {
+            if (checkBoxPower.Checked)
+            {
+                if (radioButtonAND.Checked)
+                {
+                    if (checkBoxA.Checked && checkBoxB.Checked)
+                    {
+                        labelLamp.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        labelLamp.BackColor = Color.White;
+                    }
+                }
+                else if (radioButtonOR.Checked)
+                {
+                    if (checkBoxA.Checked || checkBoxB.Checked)
+                    {
+                        labelLamp.BackColor = Color.Yellow;
+                    }
+                    else
+                    {
+                        labelLamp.BackColor = Color.White;
+                    }
+                }
+            }
+            else
+            {
+                labelLamp.BackColor = Color.White;
+            }
+        }
     }
 }
