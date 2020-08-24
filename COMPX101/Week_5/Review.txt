@@ -1,0 +1,8 @@
+1. by using repeating code the file size is significantly smaller and yoou don't have to copy and paste code for 1000s of lines
+
+2.
+for(int i=10,i>0,i--)
+{
+Console.WriteLine(i)
+}
+Console.WriteLine("Blastoff!")

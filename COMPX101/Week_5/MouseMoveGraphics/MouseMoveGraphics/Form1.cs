@@ -25,19 +25,21 @@ namespace MouseMoveGraphics
             {
                 int noCircles = rand.Next(5, 11);
                 int counter = 1;
-                while(counter <= noCircles)
-                {
-
-                }
-                size = rand.Next(0,51);
                 Graphics paper = pictureBoxDisplay.CreateGraphics();
                 Pen pen1 = new Pen(colorDialog1.Color, 2);
                 SolidBrush br = new SolidBrush(Color.Orange);
-                br.Color = Color.FromArgb(rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256));
-                //paper.DrawLine(pen1, 625, 325, e.X, e.Y);
-                //paper.DrawLine(pen1, rand.Next(pictureBoxDisplay.Width + 1), rand.Next(pictureBoxDisplay.Height + 1), e.X, e.Y);
-                paper.FillEllipse(br, e.X, e.Y, size, size);
-                paper.DrawEllipse(pen1, e.X, e.Y, size, size);
+                while (counter <= noCircles)
+                {
+                    size = rand.Next(0, 51);
+                    br.Color = Color.FromArgb(rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256));
+                    //paper.DrawLine(pen1, 625, 325, e.X, e.Y);
+                    //paper.DrawLine(pen1, rand.Next(pictureBoxDisplay.Width + 1), rand.Next(pictureBoxDisplay.Height + 1), e.X, e.Y);
+                    int randX = e.X + rand.Next(-10, 11);
+                    int randY = e.Y + rand.Next(-10, 11);
+                    paper.FillEllipse(br, randX, randY, size, size);
+                    paper.DrawEllipse(pen1, randX, randY, size, size);
+                    counter += 1;
+                }
             }
         }
 
