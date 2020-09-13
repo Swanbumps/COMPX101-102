@@ -41,5 +41,71 @@ namespace Week6_Ex1
             //set the background image of the picture box to display the phone
             pictureBoxDisplay.BackgroundImage = Properties.Resources.iPhone;
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDrawBalls_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                pictureBoxDisplay.Refresh();
+                int RandColour;
+                int RowCount = (int)numericUpDownBallsInRow.Value;
+                Graphics paper = pictureBoxDisplay.CreateGraphics();
+                SolidBrush br = new SolidBrush(Color.Orange);
+                Random rand = new Random();
+
+                for (int i = 0; ((i+1) * (GAP_SIZE + BALL_SIZE)) <= DISPLAY_HEIGHT; i++)
+                {
+                    for (int ii = 0; (ii < RowCount) && (((ii + 1) * (GAP_SIZE + BALL_SIZE)) <= DISPLAY_WIDTH); ii++)
+                    {
+                        RandColour = rand.Next(0, 41);
+                        if (RandColour <= 9 && RandColour >= 0)
+                        {
+                            br.Color = Color.Blue;
+                        } 
+                        else if (RandColour >= 10 && RandColour <= 19)
+                        {
+                            br.Color = Color.Orange;
+                        }
+                        else if (RandColour >= 20 && RandColour <= 29)
+                        {
+                            br.Color = Color.Green;
+                        }
+                        else if (RandColour >= 30 && RandColour <= 39)
+                        {
+                            br.Color = Color.Red;
+                        }
+                        else if (RandColour == 40)
+                        {
+                            br.Color = Color.Purple;
+                        }
+                        paper.FillEllipse(br, (ii* (GAP_SIZE + BALL_SIZE)) + GAP_SIZE + DISPLAY_LEFT, (i * (GAP_SIZE + BALL_SIZE)) + GAP_SIZE + DISPLAY_TOP, BALL_SIZE, BALL_SIZE);
+                    }
+                }
+
+
+                
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("you idiot\n" + ex.Message);
+            }
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            pictureBoxDisplay.Refresh();
+            numericUpDownBallsInRow.Value = 0;
+            numericUpDownBallsInRow.Focus();
+        }
     }
 }

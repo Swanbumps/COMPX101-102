@@ -30,10 +30,13 @@
         {
             this.buttonDrawPhone = new System.Windows.Forms.Button();
             this.pictureBoxDisplay = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.buttonDrawBalls = new System.Windows.Forms.Button();
+            this.numericUpDownBallsInRow = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBallsInRow)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDrawPhone
@@ -57,37 +60,72 @@
             this.pictureBoxDisplay.TabIndex = 2;
             this.pictureBoxDisplay.TabStop = false;
             // 
-            // button1
+            // buttonDrawBalls
             // 
-            this.button1.Location = new System.Drawing.Point(12, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 29);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Draw Balls";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonDrawBalls.Location = new System.Drawing.Point(12, 46);
+            this.buttonDrawBalls.Name = "buttonDrawBalls";
+            this.buttonDrawBalls.Size = new System.Drawing.Size(112, 29);
+            this.buttonDrawBalls.TabIndex = 4;
+            this.buttonDrawBalls.Text = "Draw Balls";
+            this.buttonDrawBalls.UseVisualStyleBackColor = true;
+            this.buttonDrawBalls.Click += new System.EventHandler(this.buttonDrawBalls_Click);
             // 
-            // numericUpDown1
+            // numericUpDownBallsInRow
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 139);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 5;
+            this.numericUpDownBallsInRow.Location = new System.Drawing.Point(12, 94);
+            this.numericUpDownBallsInRow.Name = "numericUpDownBallsInRow";
+            this.numericUpDownBallsInRow.Size = new System.Drawing.Size(112, 20);
+            this.numericUpDownBallsInRow.TabIndex = 5;
+            this.numericUpDownBallsInRow.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 78);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Balls per Row";
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(12, 155);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(112, 29);
+            this.buttonExit.TabIndex = 7;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // buttonClear
+            // 
+            this.buttonClear.Location = new System.Drawing.Point(12, 120);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(111, 29);
+            this.buttonClear.TabIndex = 8;
+            this.buttonClear.Text = "Clear";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 799);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonClear);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numericUpDownBallsInRow);
+            this.Controls.Add(this.buttonDrawBalls);
             this.Controls.Add(this.buttonDrawPhone);
             this.Controls.Add(this.pictureBoxDisplay);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDisplay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBallsInRow)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,8 +133,11 @@
 
         private System.Windows.Forms.Button buttonDrawPhone;
         private System.Windows.Forms.PictureBox pictureBoxDisplay;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button buttonDrawBalls;
+        private System.Windows.Forms.NumericUpDown numericUpDownBallsInRow;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Button buttonClear;
     }
 }
 
