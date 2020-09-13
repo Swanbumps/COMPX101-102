@@ -27,3 +27,13 @@ H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\De
 H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csproj.GenerateResource.cache
 H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.exe
 H:\University stuff\COMPX101\Week 2 A\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.pdb
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.exe.config
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.exe
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\bin\Debug\MouseMoveGraphics.pdb
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csprojAssemblyReference.cache
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.Form1.resources
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.Properties.Resources.resources
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csproj.GenerateResource.cache
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.csproj.CoreCompileInputs.cache
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.exe
+D:\coding\university\university-stuff\COMPX101\Week_2\MouseMoveGraphics\MouseMoveGraphics\obj\Debug\MouseMoveGraphics.pdb
