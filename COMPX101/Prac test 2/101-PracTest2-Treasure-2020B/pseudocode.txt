@@ -1,0 +1,23 @@
+Declare variables
+TRY
+   focus user input
+   gapsize = user input
+   if !(1<gapsize<11)
+      throw exception "invalid gap size"
+   while y < 10
+      while x < 10
+         squarey = (y*(gapsize+squareheight))+gapsize
+         squarex = (x*(gapsize+squarewidth))+gapsize
+         if y == 0 or y == 9
+            fillsquare (lightblue,squarex,squarey,squareheight,squarewidth)
+         else
+            fillsquare (lightpink,squarex,squarey,squareheight,squarewidth)
+         drawsquare (black,squarex,squarey,squareheight,squarewidth)
+         x += 1
+      y += 1
+
+CATCH
+   Display error message
+   Clear the textbox
+   Set focus to the textbox
+ENDTRY
