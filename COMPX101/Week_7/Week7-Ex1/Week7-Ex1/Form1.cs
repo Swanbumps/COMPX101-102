@@ -12,8 +12,8 @@ namespace Week7_Ex1
 {
     public partial class Form1 : Form
     {
-        //Name:
-        //Id:
+        //Name:Alec Bryant
+        //Id:1534218
 
         //The day number that Saturday falls on
         const int SATURDAY = 6;
@@ -32,5 +32,31 @@ namespace Week7_Ex1
         {
             InitializeComponent();
         }
+
+        private void MenuDrawPlanner_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuExit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void MethodDrawRow()
+        {
+
+        }
+
+        public void MethodClear()
+        {
+
+        }
+        
     }
 }
