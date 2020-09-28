@@ -1,0 +1,56 @@
+Weapon Name              Weapon Type    Damage         Attack Speed   DPS     
+Blackfang Bludgeon       Great Hammer   489            1.44           704.16    
+Boneshredder             Great Axe      256            0.84           215.04    
+Comet's Tail             Great Sword    872            1.2            1046.4    
+Decapitator              Great Sword    188            1.08           203.04    
+Demolisher               Great Hammer   887            1.32           1170.84   
+Dragondoom               Great Axe      762            0.96           731.52    
+Dragonfang Skewer        Great Sword    754            1.08           814.32    
+Dwarfbreaker             Great Hammer   119            1.56           185.64    
+Equalizer                Great Sword    200            1.2            240       
+Fused Iron Wrench        Great Hammer   436            1.56           680.16    
+Gatecrasher              Great Hammer   824            1.32           1087.68   
+Gearbladed Grindsaw      Great Sword    629            0.96           603.84    
+Goblinskewer             Great Sword    215            0.84           180.6     
+Heartbreaker             Great Hammer   181            1.32           238.92    
+Mace of the Twin Gods    Great Hammer   507            1.68           851.76    
+Mansmasher               Great Hammer   297            1.32           392.04    
+Manswatter               Great Hammer   384            1.32           506.88    
+Misery                   Great Hammer   251            1.44           361.44    
+Netherbane               Great Sword    419            1.08           452.52    
+Ogre Dagger              Great Sword    669            1.2            802.8     
+Ogre's Fist              Great Hammer   706            1.32           931.92    
+Scrapper                 Great Sword    360            0.96           345.6     
+Severance                Great Sword    250            1.08           270       
+Shieldcrusher            Great Hammer   153            1.32           201.96    
+Siegebreaker             Great Hammer   963            1.44           1386.72   
+Spikedriver              Great Hammer   627            1.44           902.88    
+Spinecracker             Great Hammer   662            1.32           873.84    
+The Administrator        Great Hammer   779            1.44           1121.76   
+The Axe of the Orge King Great Axe      587            1.2            704.4     
+The Cavitator            Great Hammer   80             1.44           115.2     
+The Extension Sword      Great Sword    323            1.2            387.6     
+The Grammar Hammer       Great Hammer   472            1.44           679.68    
+The Gray                 Great Sword    494            1.08           533.52    
+The Gristmill            Great Hammer   114            1.08           123.12    
+The Honorguard's Touch   Great Axe      299            1.08           322.92    
+The Mechano-Axe          Great Axe      1262           0.84           1060.08   
+The Monster Mash         Great Hammer   485            1.44           698.4     
+The Paladin's Fist       Great Hammer   353            1.44           508.32    
+The Savage Sword         Great Sword    382            1.08           412.56    
+The Stamp of Disapproval Great Hammer   516            1.32           681.12    
+The Starlight Blade      Great Sword    874            0.84           734.16    
+The Troll's Knuckle      Great Hammer   849            1.56           1324.44   
+Threaded Bolt Driver     Great Hammer   516            1.32           681.12    
+Three-Hand Sword         Great Sword    82             0.96           78.72     
+Tormentor                Great Hammer   270            1.56           421.2     
+Trollcleaver             Great Axe      199            0.96           191.04    
+Trollcutter              Great Axe      89             1.08           96.12     
+Trollsapper              Great Axe      129            1.32           170.28    
+Valgang Toothpick        Great Sword    735            0.84           617.4     
+Wraith Lord's Axe        Great Axe      346            1.44           498.24    
+Wraith Lord's Axe        Great Axe      802            1.44           1154.88   
+Wraith Lord's Hammer     Great Hammer   347            1.44           499.68    
+Wraith Lord's Mace       Great Hammer   321            0.96           308.16    
+Wraith Lord's Mace       Great Hammer   743            0.96           713.28    
+weapon count: 54
