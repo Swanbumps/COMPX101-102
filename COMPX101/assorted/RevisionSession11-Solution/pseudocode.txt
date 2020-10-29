@@ -1,0 +1,9 @@
+Declare variables
+Set filter for dialog control
+IF user selects a file THEN
+   Display an empty calendar(using the method provided)
+
+
+
+
+ENDIF
