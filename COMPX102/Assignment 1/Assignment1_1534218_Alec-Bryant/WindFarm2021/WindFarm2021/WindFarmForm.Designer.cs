@@ -344,6 +344,9 @@
             this.Controls.Add(this._tableLayoutPanel);
             this.Name = "WindFarmForm";
             this.Text = "COMPX102-21H Wind Farm";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.WindFarmForm_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.WindFarmForm_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WindFarmForm_MouseUp);
             this._tableLayoutPanel.ResumeLayout(false);
             this._tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this._pictureBoxWindFarm)).EndInit();

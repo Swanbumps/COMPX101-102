@@ -25,6 +25,9 @@ namespace Compx102H
     /// List of all the turbines currently in the wind farm.
     /// </summary>
     private List<WindTurbine> _turbines;
+    public bool mouseClicked = false;
+    public WindTurbine turbineSelected;
+    public WindTurbine lastTurbine;
     //####################################################################
     //# Constructor
     public WindFarmForm()
@@ -166,6 +169,35 @@ namespace Compx102H
       }
       string statusString = "These " + _turbines.Count.ToString() + " wind turbines can generate a total of " + totalCapacity.ToString("f1") + "MW of power";
       _statusLabel.Text = statusString;
+    }
+
+    private void WindFarmForm_MouseUp(object sender, MouseEventArgs e)
+    {
+      mouseClicked = false;
+    }
+
+    private void WindFarmForm_MouseMove(object sender, MouseEventArgs e)
+    {
+      if (mouseClicked) {
+        turbineSelected.CentreX = e.X;
+        turbineSelected.CentreY = e.Y;
+
+      }
+    }
+
+    private void WindFarmForm_MouseDown(object sender, MouseEventArgs e)
+    {
+      if(e.Button == MouseButtons.Left) {
+        int x = e.X;
+        int y = e.Y;
+        mouseClicked = true;
+        foreach (WindTurbine turbine in _turbines) {
+          if (turbine.IsPoleClicked(x, y)) {
+            turbineSelected = turbine;
+            return;
+          }
+        }
+      }
     }
   }
 }
