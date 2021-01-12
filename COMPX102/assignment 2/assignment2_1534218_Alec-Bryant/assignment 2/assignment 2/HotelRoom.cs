@@ -34,33 +34,42 @@ namespace assignment_2
 		public int roomNumber
         {
             get { return _roomNumber; }
-            set {
-				if (value > 0)
-				{
-					_roomNumber = value;
-				}
-				else
-				{
-					throw new ArgumentOutOfRangeException
-					  ("The value " + value + " is out of range.");
-				}
-			}
         }
-		public int roomNumber
+		public int floor
 		{
-			get { return _roomNumber; }
+			get { return _floor; }
 			set
 			{
-				if (value > 0)
-				{
-					_roomNumber = value;
-				}
-				else
-				{
-					throw new ArgumentOutOfRangeException
-					  ("The value " + value + " is out of range.");
-				}
+				_floor = value;
 			}
 		}
-	}
+		public RoomType typeOfRoom
+		{
+			get { return _typeOfRoom; }
+			set
+			{
+				_typeOfRoom = value;
+			}
+		}
+		public bool riverView
+        {
+            get { return _riverView; }
+            set { _riverView = value; }
+        }
+		public decimal rate
+        {
+			get { return _rate; }
+            set { _rate = value; }
+        }
+		public bool booked
+        {
+            get { return _booked; }
+			set { _booked = value; }
+        }
+        public override string ToString()
+        {
+            return roomNumber.ToString().PadRight(5)+floor.ToString().PadRight(5) + typeOfRoom.ToString().PadRight(20) + riverView.ToString().PadRight(7) +rate.ToString().PadRight(7) +booked.ToString().PadRight(7);
+        }
+    }
+
 }
