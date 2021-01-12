@@ -23,7 +23,7 @@ namespace assignment_2
 
             for(int i = 1; i <= 35; i++)
             {
-                HotelRoom room = new HotelRoom(i,i/5,(HotelRoom.RoomType)rand.Next(0,5),rand.Next(0,2)>0,rand.Next(1,100),rand.Next(0,2)>0);
+                HotelRoom room = new HotelRoom(i,((i-1)/5),(HotelRoom.RoomType)rand.Next(0,5),rand.Next(0,2)>0,rand.Next(1,100),rand.Next(0,2)>0);
                 _hotelRooms.Add(room);
             }
             
