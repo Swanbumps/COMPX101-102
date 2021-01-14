@@ -41,6 +41,7 @@
             this.labelRate = new System.Windows.Forms.Label();
             this.labelBooked = new System.Windows.Forms.Label();
             this.checkBoxBooked = new System.Windows.Forms.CheckBox();
+            this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRate)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,7 +112,6 @@
             // 
             this.textBoxRoomNumber.Location = new System.Drawing.Point(96, 535);
             this.textBoxRoomNumber.Name = "textBoxRoomNumber";
-            this.textBoxRoomNumber.ReadOnly = true;
             this.textBoxRoomNumber.Size = new System.Drawing.Size(107, 20);
             this.textBoxRoomNumber.TabIndex = 9;
             // 
@@ -119,7 +119,6 @@
             // 
             this.textBoxFloorNumber.Location = new System.Drawing.Point(96, 562);
             this.textBoxFloorNumber.Name = "textBoxFloorNumber";
-            this.textBoxFloorNumber.ReadOnly = true;
             this.textBoxFloorNumber.Size = new System.Drawing.Size(107, 20);
             this.textBoxFloorNumber.TabIndex = 10;
             // 
@@ -157,11 +156,22 @@
             this.checkBoxBooked.TabIndex = 14;
             this.checkBoxBooked.UseVisualStyleBackColor = true;
             // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Location = new System.Drawing.Point(15, 680);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdd.TabIndex = 15;
+            this.buttonAdd.Text = "Add";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 749);
+            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.checkBoxBooked);
             this.Controls.Add(this.labelBooked);
             this.Controls.Add(this.labelRate);
@@ -198,6 +208,7 @@
         private System.Windows.Forms.Label labelRate;
         private System.Windows.Forms.Label labelBooked;
         private System.Windows.Forms.CheckBox checkBoxBooked;
+        private System.Windows.Forms.Button buttonAdd;
     }
 }
 
