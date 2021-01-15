@@ -24,15 +24,12 @@ namespace assignment_2
             _hotelRooms = new BindingList<HotelRoom>();
             listBox1.DataSource = _hotelRooms;
 
-            // adapted from https://stackoverflow.com/questions/15040872/adding-enum-values-to-a-simple-combobox
-            foreach (var item in Enum.GetValues(typeof(HotelRoom.RoomType)))
-            {
-                comboBoxRoomType.Items.Add(item);
-            }
+            
+            comboBoxRoomType.DataSource = Enum.GetValues(typeof(RoomType));
 
-            for(int i = 1; i <= ROOMS_PER_FLOOR*NUMBER_OF_FLOORS; i++)
+            for (int i = 1; i <= ROOMS_PER_FLOOR*NUMBER_OF_FLOORS; i++)
             {
-                HotelRoom room = new HotelRoom((((i-1)/ROOMS_PER_FLOOR)*100)+((i-1)%ROOMS_PER_FLOOR),((i-1)/ROOMS_PER_FLOOR),(HotelRoom.RoomType)rand.Next(0,5),rand.Next(0,2)>0,rand.Next(1,100),rand.Next(0,2)>0);
+                HotelRoom room = new HotelRoom((((i-1)/ROOMS_PER_FLOOR)*100)+((i-1)%ROOMS_PER_FLOOR),((i-1)/ROOMS_PER_FLOOR),(RoomType)rand.Next(0,5),rand.Next(0,2)>0,rand.Next(1,100),rand.Next(0,2)>0);
                 _hotelRooms.Add(room);
             }
             
@@ -41,7 +38,14 @@ namespace assignment_2
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            int RoomNumber = int.Parse(textBoxRoomNumber.Text);
+            int roomNumber = (int)numericUpDownRoomNumber.Value;
+            int floorNumber = (int)numericUpDownFloorNumber.Value;
+            RoomType roomType = (RoomType)comboBoxRoomType.SelectedItem;
+            bool riverView = checkBoxRiverView.Checked;
+            bool booked = checkBoxBooked.Checked;
+            decimal rate = numericUpDownRate.Value;
+            HotelRoom room = new HotelRoom(roomNumber,floorNumber,roomType,riverView,rate,false);
+            _hotelRooms.Add(room);
         }
     }
 }

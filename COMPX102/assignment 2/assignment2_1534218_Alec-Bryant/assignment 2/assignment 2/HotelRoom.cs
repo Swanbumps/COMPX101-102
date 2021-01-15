@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace assignment_2
 {
-	
+	public enum RoomType { SingleRoom, QueenStudio, KingStudio, TwoBedroomUnit, LuxurySuite }
 	class HotelRoom
     {
-		public enum RoomType { SingleRoom, QueenStudio, KingStudio, TwoBedroomUnit, LuxurySuite }
 		
 		private int _roomNumber;
 		private int _floor;
