@@ -44,7 +44,16 @@ namespace assignment_2
             bool riverView = checkBoxRiverView.Checked;
             bool booked = checkBoxBooked.Checked;
             decimal rate = numericUpDownRate.Value;
-            HotelRoom room = new HotelRoom(roomNumber,floorNumber,roomType,riverView,rate,false);
+
+            foreach(HotelRoom hotelRoom in _hotelRooms)
+            {
+                if (hotelRoom.roomNumber == roomNumber)
+                {
+                    return;
+                }
+            }
+
+            HotelRoom room = new HotelRoom(roomNumber,roomNumber/100,roomType,riverView,rate,false);
             _hotelRooms.Add(room);
         }
     }

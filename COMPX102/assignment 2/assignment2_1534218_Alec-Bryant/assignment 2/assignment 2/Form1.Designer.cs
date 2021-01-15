@@ -162,6 +162,11 @@
             // numericUpDownRoomNumber
             // 
             this.numericUpDownRoomNumber.Location = new System.Drawing.Point(878, 12);
+            this.numericUpDownRoomNumber.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.numericUpDownRoomNumber.Name = "numericUpDownRoomNumber";
             this.numericUpDownRoomNumber.Size = new System.Drawing.Size(107, 20);
             this.numericUpDownRoomNumber.TabIndex = 16;
