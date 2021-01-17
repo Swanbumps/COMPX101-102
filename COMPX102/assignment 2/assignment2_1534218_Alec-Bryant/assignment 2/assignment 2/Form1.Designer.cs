@@ -46,6 +46,8 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonBook = new System.Windows.Forms.Button();
             this.buttonUnBook = new System.Windows.Forms.Button();
+            this.labelStatus = new System.Windows.Forms.Label();
+            this.labelNoVacancy = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRoomNumber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFloorNumber)).BeginInit();
@@ -58,8 +60,10 @@
             this.listBox1.ItemHeight = 19;
             this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
+            this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listBox1.Size = new System.Drawing.Size(776, 517);
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // labelRoomType
             // 
@@ -170,11 +174,14 @@
             this.numericUpDownRoomNumber.Name = "numericUpDownRoomNumber";
             this.numericUpDownRoomNumber.Size = new System.Drawing.Size(107, 20);
             this.numericUpDownRoomNumber.TabIndex = 16;
+            this.numericUpDownRoomNumber.ValueChanged += new System.EventHandler(this.numericUpDownRoomNumber_ValueChanged);
             // 
             // numericUpDownFloorNumber
             // 
+            this.numericUpDownFloorNumber.Enabled = false;
             this.numericUpDownFloorNumber.Location = new System.Drawing.Point(878, 38);
             this.numericUpDownFloorNumber.Name = "numericUpDownFloorNumber";
+            this.numericUpDownFloorNumber.ReadOnly = true;
             this.numericUpDownFloorNumber.Size = new System.Drawing.Size(107, 20);
             this.numericUpDownFloorNumber.TabIndex = 17;
             // 
@@ -186,6 +193,7 @@
             this.buttonEdit.TabIndex = 18;
             this.buttonEdit.Text = "Edit";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDelete
             // 
@@ -195,6 +203,7 @@
             this.buttonDelete.TabIndex = 19;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonBook
             // 
@@ -204,6 +213,7 @@
             this.buttonBook.TabIndex = 20;
             this.buttonBook.Text = "Book";
             this.buttonBook.UseVisualStyleBackColor = true;
+            this.buttonBook.Click += new System.EventHandler(this.buttonBook_Click);
             // 
             // buttonUnBook
             // 
@@ -214,11 +224,33 @@
             this.buttonUnBook.Text = "UnBook";
             this.buttonUnBook.UseVisualStyleBackColor = true;
             // 
+            // labelStatus
+            // 
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.Location = new System.Drawing.Point(797, 515);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Size = new System.Drawing.Size(83, 13);
+            this.labelStatus.TabIndex = 22;
+            this.labelStatus.Text = "STATUSLABEL";
+            // 
+            // labelNoVacancy
+            // 
+            this.labelNoVacancy.AutoSize = true;
+            this.labelNoVacancy.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelNoVacancy.Location = new System.Drawing.Point(795, 499);
+            this.labelNoVacancy.Name = "labelNoVacancy";
+            this.labelNoVacancy.Size = new System.Drawing.Size(84, 13);
+            this.labelNoVacancy.TabIndex = 23;
+            this.labelNoVacancy.Text = "NO VANCANCY";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1005, 540);
+            this.Controls.Add(this.labelNoVacancy);
+            this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.buttonUnBook);
             this.Controls.Add(this.buttonBook);
             this.Controls.Add(this.buttonDelete);
@@ -267,6 +299,8 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonBook;
         private System.Windows.Forms.Button buttonUnBook;
+        private System.Windows.Forms.Label labelStatus;
+        private System.Windows.Forms.Label labelNoVacancy;
     }
 }
 

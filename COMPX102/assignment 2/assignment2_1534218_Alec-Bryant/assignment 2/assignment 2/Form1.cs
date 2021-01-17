@@ -32,14 +32,15 @@ namespace assignment_2
                 HotelRoom room = new HotelRoom((((i-1)/ROOMS_PER_FLOOR)*100)+((i-1)%ROOMS_PER_FLOOR),((i-1)/ROOMS_PER_FLOOR),(RoomType)rand.Next(0,5),rand.Next(0,2)>0,rand.Next(1,100),rand.Next(0,2)>0);
                 _hotelRooms.Add(room);
             }
-            
+            updateStatus();
+
 
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             int roomNumber = (int)numericUpDownRoomNumber.Value;
-            int floorNumber = (int)numericUpDownFloorNumber.Value;
+            // floorNumber = (int)numericUpDownFloorNumber.Value;
             RoomType roomType = (RoomType)comboBoxRoomType.SelectedItem;
             bool riverView = checkBoxRiverView.Checked;
             bool booked = checkBoxBooked.Checked;
@@ -55,6 +56,114 @@ namespace assignment_2
 
             HotelRoom room = new HotelRoom(roomNumber,roomNumber/100,roomType,riverView,rate,false);
             _hotelRooms.Add(room);
+            updateStatus();
+        }
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            HotelRoom room = new HotelRoom(_hotelRooms[listBox1.SelectedIndex].roomNumber, (int)numericUpDownRoomNumber.Value/100, (RoomType)comboBoxRoomType.SelectedItem, checkBoxRiverView.Checked, numericUpDownRate.Value, checkBoxBooked.Checked);
+            _hotelRooms[listBox1.SelectedIndex] = room;
+            updateStatus();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex != -1)
+            {
+            HotelRoom room = (HotelRoom) listBox1.SelectedItem;
+            numericUpDownRoomNumber.Value = room.roomNumber;
+            numericUpDownFloorNumber.Value = room.floor;
+            comboBoxRoomType.SelectedItem = room.typeOfRoom;
+            checkBoxRiverView.Checked = room.riverView;
+            checkBoxBooked.Checked = room.booked;
+            numericUpDownRate.Value = room.rate;
+            }
+        }
+
+
+        private void numericUpDownRoomNumber_ValueChanged(object sender, EventArgs e)
+        {
+            numericUpDownFloorNumber.Value = (int)numericUpDownRoomNumber.Value / 100;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            List<int> listSelected = new List<int>();
+            foreach (int index in listBox1.SelectedIndices)
+            {
+                listSelected.Add(index);
+            }
+            listSelected.Sort();
+            for (int i = listSelected.Count - 1; i >= 0; i--)
+            {
+                int index = listSelected[i];
+                _hotelRooms.RemoveAt(index);
+            }
+            listBox1.ClearSelected();
+            updateStatus();
+        }
+
+        private void buttonBook_Click(object sender, EventArgs e)
+        {
+            decimal invoice = 0;
+            bool roomsFree = false;
+            List<int> listSelected = new List<int>();
+            foreach (int index in listBox1.SelectedIndices)
+            {
+                if (_hotelRooms[index].booked)
+                {
+                    roomsFree = true;
+                }
+            }
+            if (!roomsFree)
+            {
+                foreach (int index in listBox1.SelectedIndices)
+                {
+                    /*doesn't work cannot figure out why. will randomly skip entries
+                    HotelRoom room = _hotelRooms[index];
+                    room.booked = true;
+                    _hotelRooms[index] = room;
+                    */
+                    _hotelRooms[index].booked = true;
+                    invoice += _hotelRooms[index].rate;
+
+                }
+                listBox1.DataSource = null;
+                listBox1.DataSource = _hotelRooms;
+                updateStatus();
+                MessageBox.Show("all rooms booked with a total cost of " + invoice.ToString("c"));
+            }
+            else
+            {
+                MessageBox.Show("1 or more of the rooms you selected are already booked");
+            }
+
+        }
+        private void updateStatus()
+        {
+            int booked = 0;
+            int vacant = 0;
+            bool noVacancy = false;
+            foreach (HotelRoom hotelRoom in _hotelRooms)
+            {
+                if (hotelRoom.booked)
+                {
+                    booked++;
+                }
+                else
+                {
+                    vacant++;
+                    noVacancy = true;
+                }
+            }
+            labelStatus.Text = "There are " + booked.ToString() + " rooms booked and " + vacant.ToString() + " rooms vacant";
+            if (noVacancy)
+            {
+                labelNoVacancy.BackColor = Color.Black;
+            }
+            else
+            {
+                labelNoVacancy.BackColor = Color.Red;
+            }
         }
     }
 }
