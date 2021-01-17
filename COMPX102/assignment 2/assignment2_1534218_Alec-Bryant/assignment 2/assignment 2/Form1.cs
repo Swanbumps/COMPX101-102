@@ -12,9 +12,10 @@ namespace assignment_2
 {
     public partial class Form1 : Form
     {
+        //################ CONSTANTS ################
         const int ROOMS_PER_FLOOR = 5;
         const int NUMBER_OF_FLOORS = 7;
-
+        //################ INSTANCE VARIABLES ################
         private BindingList<HotelRoom> _hotelRooms;
         Random rand = new Random();
 
@@ -58,9 +59,19 @@ namespace assignment_2
             _hotelRooms.Add(room);
             updateStatus();
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonEdit_Click(object sender, EventArgs e)
         {
             HotelRoom room = new HotelRoom(_hotelRooms[listBox1.SelectedIndex].roomNumber, (int)numericUpDownRoomNumber.Value/100, (RoomType)comboBoxRoomType.SelectedItem, checkBoxRiverView.Checked, numericUpDownRate.Value, checkBoxBooked.Checked);
+            if(room.roomNumber != _hotelRooms[listBox1.SelectedIndex].roomNumber)
+            {
+                MessageBox.Show("Room Number was not upated as this is not allowed");
+            }
             _hotelRooms[listBox1.SelectedIndex] = room;
             updateStatus();
         }
