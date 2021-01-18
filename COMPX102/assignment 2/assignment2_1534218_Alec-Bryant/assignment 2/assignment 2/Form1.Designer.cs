@@ -45,7 +45,6 @@
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonBook = new System.Windows.Forms.Button();
-            this.buttonUnBook = new System.Windows.Forms.Button();
             this.labelStatus = new System.Windows.Forms.Label();
             this.labelNoVacancy = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRate)).BeginInit();
@@ -215,15 +214,6 @@
             this.buttonBook.UseVisualStyleBackColor = true;
             this.buttonBook.Click += new System.EventHandler(this.buttonBook_Click);
             // 
-            // buttonUnBook
-            // 
-            this.buttonUnBook.Location = new System.Drawing.Point(876, 187);
-            this.buttonUnBook.Name = "buttonUnBook";
-            this.buttonUnBook.Size = new System.Drawing.Size(75, 23);
-            this.buttonUnBook.TabIndex = 21;
-            this.buttonUnBook.Text = "UnBook";
-            this.buttonUnBook.UseVisualStyleBackColor = true;
-            // 
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
@@ -251,7 +241,6 @@
             this.ClientSize = new System.Drawing.Size(1005, 540);
             this.Controls.Add(this.labelNoVacancy);
             this.Controls.Add(this.labelStatus);
-            this.Controls.Add(this.buttonUnBook);
             this.Controls.Add(this.buttonBook);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonEdit);
@@ -270,7 +259,6 @@
             this.Controls.Add(this.labelRoomType);
             this.Controls.Add(this.listBox1);
             this.Name = "Form1";
-            this.Text = "read this if you\'re gay";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownRoomNumber)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFloorNumber)).EndInit();
@@ -298,7 +286,6 @@
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonBook;
-        private System.Windows.Forms.Button buttonUnBook;
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.Label labelNoVacancy;
     }
