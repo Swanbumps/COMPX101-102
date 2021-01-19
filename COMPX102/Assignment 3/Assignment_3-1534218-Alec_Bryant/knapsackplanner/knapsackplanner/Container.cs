@@ -13,5 +13,6 @@ namespace knapsackplanner
         //INSTANCE VARIABLES
         private double _maxWeight;
         private double _maxVolume;
+        private BindingList<>
     }
 }
