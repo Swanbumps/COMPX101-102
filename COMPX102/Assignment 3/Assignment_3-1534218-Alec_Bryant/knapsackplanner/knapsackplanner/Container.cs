@@ -28,6 +28,10 @@ namespace knapsackplanner
             get { return _maxVolume; }
             set { _maxVolume = value; }
         }
-
+        public BindingList<Item> ItemsContained
+        {
+            get { return _itemsContained; }
+            set { _itemsContained = value; }
+        }
     }
 }
