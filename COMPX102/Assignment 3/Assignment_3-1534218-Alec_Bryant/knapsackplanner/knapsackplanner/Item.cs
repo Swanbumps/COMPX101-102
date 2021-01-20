@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace knapsackplanner
 {
@@ -29,7 +30,22 @@ namespace knapsackplanner
             _weight = weight;
             _volume = volume;
             _value = value;
-
         }
+        public double Weight
+        {
+            get { return _weight; }
+            set { _weight = value; }
+        }
+        public double Volume
+        {
+            get { return _volume; }
+            set { _volume = value; }
+        }
+        public decimal Value
+        {
+            get { return _value; }
+            set { _value = value; }
+        }
+
     }
 }
