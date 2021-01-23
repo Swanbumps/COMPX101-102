@@ -14,10 +14,25 @@ namespace knapsackplanner
 
         //######################################
         //INSTANCE VARIABLES
+        private string _name;
         private double _maxWeight;
         private double _maxVolume;
         private BindingList<Item> _itemsContained;
 
+        public Container(string name, double maxWeight, double maxVolume)
+        {
+            _name = name;
+            _maxWeight = maxWeight;
+            _maxVolume = maxVolume;
+        }
+
+
+
+        public string name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
         public double MaxWeight
         {
             get { return _maxWeight; }

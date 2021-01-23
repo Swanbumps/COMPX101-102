@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this._dataGridViewItems = new System.Windows.Forms.DataGridView();
+            this._dataGridViewContainers = new System.Windows.Forms.DataGridView();
+            this.dataGridViewStoredSItems = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._dataGridViewItems)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._dataGridViewContainers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStoredSItems)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -44,9 +44,9 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView3, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this._dataGridViewItems, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this._dataGridViewContainers, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.dataGridViewStoredSItems, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -57,32 +57,32 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // _dataGridViewItems
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 63);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(260, 324);
-            this.dataGridView1.TabIndex = 0;
+            this._dataGridViewItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this._dataGridViewItems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._dataGridViewItems.Location = new System.Drawing.Point(3, 63);
+            this._dataGridViewItems.Name = "_dataGridViewItems";
+            this._dataGridViewItems.Size = new System.Drawing.Size(260, 324);
+            this._dataGridViewItems.TabIndex = 0;
             // 
-            // dataGridView2
+            // _dataGridViewContainers
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(269, 63);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(260, 324);
-            this.dataGridView2.TabIndex = 1;
+            this._dataGridViewContainers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this._dataGridViewContainers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._dataGridViewContainers.Location = new System.Drawing.Point(269, 63);
+            this._dataGridViewContainers.Name = "_dataGridViewContainers";
+            this._dataGridViewContainers.Size = new System.Drawing.Size(260, 324);
+            this._dataGridViewContainers.TabIndex = 1;
             // 
-            // dataGridView3
+            // dataGridViewStoredSItems
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(535, 63);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(262, 324);
-            this.dataGridView3.TabIndex = 2;
+            this.dataGridViewStoredSItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStoredSItems.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewStoredSItems.Location = new System.Drawing.Point(535, 63);
+            this.dataGridViewStoredSItems.Name = "dataGridViewStoredSItems";
+            this.dataGridViewStoredSItems.Size = new System.Drawing.Size(262, 324);
+            this.dataGridViewStoredSItems.TabIndex = 2;
             // 
             // Form1
             // 
@@ -93,9 +93,9 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._dataGridViewItems)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._dataGridViewContainers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStoredSItems)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -103,9 +103,9 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView _dataGridViewItems;
+        private System.Windows.Forms.DataGridView _dataGridViewContainers;
+        private System.Windows.Forms.DataGridView dataGridViewStoredSItems;
     }
 }
 
