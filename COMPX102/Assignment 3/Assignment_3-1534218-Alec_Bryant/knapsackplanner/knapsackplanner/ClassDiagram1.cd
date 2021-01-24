@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="knapsackplanner.Item">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABABIAAAAAAAAAAAAAAAAAQAACAAAAAAAAIgAACAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="knapsackplanner.Form1" Collapsed="true">
+    <Position X="5" Y="2.25" Width="1.5" />
+    <AssociationLine Name="Container" Type="knapsackplanner.Container" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="2.625" />
+        <Point X="4.188" Y="2.625" />
+        <Point X="4.188" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAEAAASEACAQBRAiCQCAAEQSEBBCgAAAQgAAQwAkAGA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Container" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="knapsackplanner.Container">
+    <Position X="3.5" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQCoCgBAEAAAgAAAAAAAAQAAAIAAAAAEAIAAAAAAgA=</HashCode>
+      <FileName>Container.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
