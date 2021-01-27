@@ -15,7 +15,6 @@ namespace knapsackplanner
         public Form1()
         {
             InitializeComponent();
-            private 
         }
     }
 }
