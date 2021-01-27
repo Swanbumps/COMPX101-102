@@ -11,6 +11,7 @@ namespace knapsackplanner
     {
         //#########################################################################
         //# Instance Variables
+        private string _name;
         /// <summary>
         /// Item weight
         /// </summary>
@@ -25,11 +26,17 @@ namespace knapsackplanner
         private decimal _value;
 
 
-        public Item(double weight, double volume, decimal value)
+        public Item(string name, double weight, double volume, decimal value)
         {
+            _name = name;
             _weight = weight;
             _volume = volume;
             _value = value;
+        }
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
         }
         public double Weight
         {
