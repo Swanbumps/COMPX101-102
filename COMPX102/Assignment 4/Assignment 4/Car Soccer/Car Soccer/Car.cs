@@ -8,5 +8,10 @@ namespace Car_Soccer
 {
     class Car : Sprite
     {
+        private enum Team
+        {
+            Red,
+            Blue
+        }
     }
 }

@@ -15,6 +15,12 @@ namespace Car_Soccer
         public Form1()
         {
             InitializeComponent();
+
+        }
+
+        private void AnimationTimerTick(object sender, EventArgs e)
+        {
+
         }
     }
 }

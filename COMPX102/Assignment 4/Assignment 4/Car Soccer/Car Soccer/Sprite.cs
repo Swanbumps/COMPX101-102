@@ -9,12 +9,27 @@ namespace Car_Soccer
 {
     class Sprite
     {
-        double speed;
-        Point location;
-        double angle;
+        double _speed;
+        int _locX;
+        int _locY;
+        double _angle;
 
 
-
-
+        public double Speed
+        {
+            get { return _speed; }
+        }
+        public int LocX
+        {
+            get { return _locX; }
+        }
+        public int LocY
+        {
+            get { return _locY; }
+        }
+        private double Angle
+        {
+            get { return _angle; }
+        }
     }
 }

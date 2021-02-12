@@ -8,5 +8,9 @@ namespace Car_Soccer
 {
     class Goal
     {
+        int locX;
+        int locY;
+        int sizeX;
+        int sizeY;
     }
 }
