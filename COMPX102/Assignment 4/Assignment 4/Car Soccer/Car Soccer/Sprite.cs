@@ -9,10 +9,10 @@ namespace Car_Soccer
 {
     class Sprite
     {
-        double _speed;
-        int _x;
-        int _y;
-        double _angle;
+        internal double _speed;
+        internal int _x;
+        internal int _y;
+        internal double _angle;
 
 
         public double Speed

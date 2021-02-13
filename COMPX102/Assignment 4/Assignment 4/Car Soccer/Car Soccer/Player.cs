@@ -10,10 +10,6 @@ namespace Car_Soccer
     class Player : Car
     {
         bool _turnDirection;
-        double _speed;
-        int _x;
-        int _y;
-        double _angle;
         Team _team;
         public Player(int x, int y, Team team)
         {
@@ -25,7 +21,7 @@ namespace Car_Soccer
         {
             if(key.KeyCode == Keys.J)
             {
-                MessageBox.Show("awesome");
+
             }
         }
     }

@@ -16,13 +16,11 @@ namespace Car_Soccer
     class Car : Sprite
     {
         Team _team;
-        int _x;
-        int _y;
 
         public void Draw(Graphics paper)
         {
             Brush br = new SolidBrush(Color.Red);
-            paper.FillRectangle()
+            paper.FillRectangle(br, _x, _y, 10, 10);
         }
 
         public Team Team
