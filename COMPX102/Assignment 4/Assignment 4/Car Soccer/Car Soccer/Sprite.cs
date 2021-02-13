@@ -10,8 +10,8 @@ namespace Car_Soccer
     class Sprite
     {
         double _speed;
-        int _locX;
-        int _locY;
+        int _x;
+        int _y;
         double _angle;
 
 
@@ -19,13 +19,13 @@ namespace Car_Soccer
         {
             get { return _speed; }
         }
-        public int LocX
+        public int X
         {
-            get { return _locX; }
+            get { return _x; }
         }
-        public int LocY
+        public int Y
         {
-            get { return _locY; }
+            get { return _y; }
         }
         private double Angle
         {
