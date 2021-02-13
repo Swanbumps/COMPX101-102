@@ -12,6 +12,7 @@ namespace Car_Soccer
 {
     public partial class Form1 : Form
     {
+        private List<Goal> _goals;
         public Form1()
         {
             InitializeComponent();
