@@ -36,6 +36,8 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Car_Soccer.Properties.Resources.field;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -46,7 +48,6 @@
             // 
             // _animationTimer
             // 
-            this._animationTimer.Enabled = true;
             this._animationTimer.Interval = 10;
             this._animationTimer.Tick += new System.EventHandler(this.AnimationTimerTick);
             // 

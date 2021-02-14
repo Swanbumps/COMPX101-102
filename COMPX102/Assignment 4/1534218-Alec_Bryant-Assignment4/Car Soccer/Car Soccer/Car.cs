@@ -25,13 +25,13 @@ namespace Car_Soccer
         {
             if (!_input)
             {
-                if (_speed + 0.25 <= 10)
+                if (_speed + 0.15 <= 15)
                 {
-                    _speed += 0.25;
+                    _speed += 0.15;
                 }
                 else
                 {
-                    _speed = 10;
+                    _speed = 15;
                 }
             }
             else

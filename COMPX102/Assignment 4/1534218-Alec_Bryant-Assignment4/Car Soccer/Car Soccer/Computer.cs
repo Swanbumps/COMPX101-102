@@ -13,7 +13,7 @@ namespace Car_Soccer
         private double _angleToBall;
         private double _angleDiff;
         private bool _switchD;
-        public Computer(int x, int y, Team team)
+        public Computer(int x, int y, Team team, string file)
         {
             _x = x;
             _y = y;
@@ -26,7 +26,8 @@ namespace Car_Soccer
             {
                 _color = Color.Red;
             }
-            _angle = 270;
+            _angle = 315;
+            _image = Image.FromFile(file);
         }
         public void Advance(Ball ball)
         {

@@ -15,8 +15,8 @@ namespace Car_Soccer
         internal float _y;
         internal double _angle;
         internal Color _color;
-        internal float _size = 30;
-        
+        internal float _size = 40;
+        internal Image _image;
         public double Speed
         {
             get { return _speed; }
@@ -37,11 +37,12 @@ namespace Car_Soccer
         {
             get { return _size; }
         }
-        public void Draw(Graphics paper)
+        public virtual void Draw(Graphics paper)
         {
             Brush br = new SolidBrush(_color);
             Pen pen = new Pen(Color.Black);
-            paper.FillEllipse(br, _x - _size/2, _y - _size/2, _size, _size);
+            //paper.FillEllipse(br, _x - _size/2, _y - _size/2, _size, _size);
+            paper.DrawImage(_image, _x - _size / 2, _y - _size / 2, _size, _size);
             paper.DrawLine(pen, _x, _y, _x + (float)(_speed * 5F * Math.Cos(DegToRad(_angle - 90))), _y + (float)(_speed * 5F * Math.Sin(DegToRad(_angle - 90))));
             paper.DrawLine(pen, _x, _y, _x + (float)(15 * Math.Cos(DegToRad(_angle - 90))), _y + (float)(15 * Math.Sin(DegToRad(_angle - 90))));
         }

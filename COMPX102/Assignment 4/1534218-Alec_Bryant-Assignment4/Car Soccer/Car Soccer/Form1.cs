@@ -27,15 +27,16 @@ namespace Car_Soccer
             _goals = new List<Goal>();
             _players = new List<Player>();
             _computers = new List<Computer>();
-            _players.Add(new Player(pictureBox1.Width / 4, pictureBox1.Height / 2, Team.Blue));
-            _computers.Add(new Computer((pictureBox1.Width / 4) * 3, pictureBox1.Height / 2, Team.Red));
-            _goals.Add(new Goal(30, pictureBox1.Height / 2, 60, 150, Team.Blue));
-            _goals.Add(new Goal(pictureBox1.Width - 30, pictureBox1.Height / 2, 60, 150, Team.Red));
+            _players.Add(new Player(pictureBox1.Width / 4, pictureBox1.Height / 2, Team.Blue, "car_blue.png"));
+            _computers.Add(new Computer((pictureBox1.Width / 4) * 3, pictureBox1.Height / 2, Team.Red, "car_red.png"));
+            _goals.Add(new Goal(30, pictureBox1.Height / 2, 60, 150, Team.Blue,"goal_sprite.png"));
+            _goals.Add(new Goal(pictureBox1.Width - 30, pictureBox1.Height / 2, 60, 150, Team.Red, "goal_sprite2.png"));
             _ball = new Ball(pictureBox1);
             keyPress = false;
             redScore = 0;
             blueScore = 0;
-            MessageBox.Show("Welcome to my Game\nYou are the blue ball\nYour goal is to hit the gold ball into the goal\nOn the right side of the screen\nHowever you are facing a computer player\nTo control your ball you must push and hold the space key\nWhile holding said key you will deccelerate and turn\nEvery time you press the key you will turn in the opposite direction\nWhile the key is released you will accelerate\nGood Luck and Have Fun");
+            MessageBox.Show("Welcome to my Game\nYou are the blue car\nYour goal is to hit the ball into the goal\nOn the right side of the screen\nHowever you are facing a computer player\nTo control your car you must push and hold the space key\nWhile holding said key you will deccelerate and turn\nEvery time you press the key you will turn in the opposite direction\nWhile the key is released you will accelerate\nFirst to 5 goals wins\nGood Luck and Have Fun");
+            _animationTimer.Enabled = true;
         }
 
         private void AnimationTimerTick(object sender, EventArgs e)
@@ -131,9 +132,9 @@ namespace Car_Soccer
         }
         private void DrawField(Graphics paper)
         {
-            Brush br = new SolidBrush(Color.LightGreen);
-            paper.FillRectangle(br, 0, 0, pictureBox1.Width, pictureBox1.Height);
-            br = new SolidBrush(Color.Black);
+            //Brush br = new SolidBrush(Color.LightGreen);
+            //paper.FillRectangle(br, 0, 0, pictureBox1.Width, pictureBox1.Height);
+            Brush br = new SolidBrush(Color.Black);
             paper.FillRectangle(br, 0, 0, 60, pictureBox1.Height);
             paper.FillRectangle(br, pictureBox1.Width - 60, 0, pictureBox1.Width, pictureBox1.Height);
             FontFamily fontFamily = new FontFamily("Comic sans MS");

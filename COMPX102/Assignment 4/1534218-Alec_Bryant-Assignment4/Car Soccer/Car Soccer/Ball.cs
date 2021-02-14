@@ -13,10 +13,11 @@ namespace Car_Soccer
         public Ball(PictureBox pictureBox)
         {
             _x = pictureBox.Width / 2;
-            _y = pictureBox.Height / 2;
+            _y = pictureBox.Height / 3;
             _speed = 0;
             _angle = 0;
-            _color = Color.Gold;
+            _color = Color.Transparent;
+            _image = Image.FromFile("ball.png");
         }
         public Team IsInGoal(List<Goal> goals)
         {
@@ -72,6 +73,11 @@ namespace Car_Soccer
             {
                 _speed = 0;
             }
+        }
+        public override void Draw(Graphics paper)
+        {
+            paper.DrawImage(_image, _x - _size / 2, _y - _size / 2, _size, _size);
+            base.Draw(paper);
         }
     }
 }
