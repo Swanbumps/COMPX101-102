@@ -18,11 +18,50 @@ namespace Car_Soccer
             _angle = 0;
             _color = Color.Gold;
         }
-        public void IsInGoal(List<Goal> goals)
+        public Team IsInGoal(List<Goal> goals)
         {
-            foreach(Goal goal in goals)
+            RectangleF rect = new RectangleF(_x - _size / 2, _y - _size / 2, _size, _size);
+            foreach (Goal goal in goals)
+            { 
+                if (rect.IntersectsWith(goal.Rect))
+                {
+                    if (goal.Team == Team.Blue)
+                    {
+                        return Team.Red;
+                    }
+                    else if(goal.Team == Team.Red)
+                    {
+                        return Team.Blue;
+                    }
+                }
+                else
+                {
+                    
+                }
+            }
+            return Team.None;
+        }
+        public void IsCollide(List<Car> cars)
+        {
+            RectangleF rect = new RectangleF(_x - _size / 2, _y - _size / 2, _size, _size);
+            foreach(Car car in cars)
             {
-                
+                if (rect.IntersectsWith(new RectangleF(car.X - car.Size / 2, car.Y - car.Size / 2, car.Size, car.Size)))
+                {
+                    _angle = car.Angle;
+                    _speed = car.Speed * 2.5;
+                }
+            }
+        }
+        public override void Accelerate()
+        {
+            if (_speed - 0.1 >= 0)
+            {
+                _speed -= 0.1;
+            }
+            else
+            {
+                _speed = 0;
             }
         }
     }

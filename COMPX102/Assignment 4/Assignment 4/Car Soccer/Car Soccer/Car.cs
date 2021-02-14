@@ -10,7 +10,8 @@ namespace Car_Soccer
     public enum Team
     {
         Red,
-        Blue
+        Blue,
+        None
     }
     
     class Car : Sprite
@@ -18,6 +19,50 @@ namespace Car_Soccer
         internal Team _team;
         internal bool _input = false;
         internal bool _turnDirection = false;
+
+
+        public override void Accelerate()
+        {
+            if (!_input)
+            {
+                if (_speed + 0.25 <= 10)
+                {
+                    _speed += 0.25;
+                }
+                else
+                {
+                    _speed = 10;
+                }
+            }
+            else
+            {
+                Rotate();
+                if (_speed - 0.1 >= 0)
+                {
+                    _speed -= 0.1;
+                }
+                else
+                {
+                    _speed = 0;
+                }
+            }
+        }
+        public override void Rotate()
+        {
+            if (_turnDirection)
+            {
+                _angle += 2.5;
+            }
+            else
+            {
+                _angle -= 2.5;
+            }
+            _angle %= 360;
+            if (_angle < 0)
+            {
+                _angle += 360;
+            }
+        }
 
         public Team Team
         {

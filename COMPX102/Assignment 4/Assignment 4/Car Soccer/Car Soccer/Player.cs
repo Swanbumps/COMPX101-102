@@ -24,7 +24,7 @@ namespace Car_Soccer
             {
                 _color = Color.Red;
             }
-            _angle = 135;
+            _angle = 90;
         }
         public void InputDown(KeyEventArgs key)
         {
@@ -41,48 +41,7 @@ namespace Car_Soccer
                 _input = false;
             }
         }
-        public override void Accelerate()
-        {
-            if (!_input)
-            {
-                if (_speed + 0.25 <= 10)
-                {
-                    _speed += 0.25;
-                }
-                else
-                {
-                    _speed = 10;
-                }
-            }
-            else
-            {
-                Rotate();
-                if(_speed - 0.1 >= 0)
-                {
-                    _speed -= 0.1;
-                }
-                else
-                {
-                    _speed = 0;
-                }
-            }
-        }
-        public override void Rotate()
-        {
-            if (_turnDirection)
-            {
-                _angle += 2.5;
-            }
-            else
-            {
-                _angle -= 2.5;
-            }
-            _angle %= 360;
-            if (_angle < 0)
-            {
-                _angle += 360;
-            }
-        }
+        
     }
     
 }
