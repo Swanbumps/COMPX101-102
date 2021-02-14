@@ -31,7 +31,9 @@ namespace Car_Soccer
         }
         public void IsFacingBall()
         {
-            
+            float xDiff = _ball - x1;
+            float yDiff = y2 - y1;
+             Math.Atan2(yDiff, xDiff) * 180.0 / Math.PI;
         }
     }
 }

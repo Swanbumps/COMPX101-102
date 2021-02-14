@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace Car_Soccer
 {
+    
     public partial class Form1 : Form
     {
         private List<Goal> _goals;
         private List<Car> _cars;
         private bool keyPress;
-        private Ball _ball;
+        protected Ball _ball;
         private int redScore;
         private int blueScore;
         public Form1()
