@@ -15,17 +15,21 @@ namespace Car_Soccer
     
     class Car : Sprite
     {
-        Team _team;
-
-        public void Draw(Graphics paper)
-        {
-            Brush br = new SolidBrush(Color.Red);
-            paper.FillRectangle(br, _x, _y, 10, 10);
-        }
+        internal Team _team;
+        internal bool _input = false;
+        internal bool _turnDirection = false;
 
         public Team Team
         {
             get { return _team; }
+        }
+        public bool TurnD
+        {
+            get { return _turnDirection; }
+        }
+        public bool Input
+        {
+            get { return _input; }
         }
     }
     
