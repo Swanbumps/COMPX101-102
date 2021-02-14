@@ -41,15 +41,24 @@ namespace Car_Soccer
             }
             return Team.None;
         }
-        public void IsCollide(List<Car> cars)
+        public void IsCollide(List<Player> players,List<Computer> computers)
         {
             RectangleF rect = new RectangleF(_x - _size / 2, _y - _size / 2, _size, _size);
-            foreach(Car car in cars)
+            foreach(Car car in players)
             {
                 if (rect.IntersectsWith(new RectangleF(car.X - car.Size / 2, car.Y - car.Size / 2, car.Size, car.Size)))
                 {
                     _angle = car.Angle;
-                    _speed = car.Speed * 2.5;
+                    _speed = (car.Speed * 1.5) + 5;
+                }
+            }
+            foreach(Car car in computers)
+            {
+                if (rect.IntersectsWith(new RectangleF(car.X - car.Size / 2, car.Y - car.Size / 2, car.Size, car.Size)))
+                {
+                    _angle = car.Angle;
+                    _speed = (car.Speed * 1.5) + 5;
+
                 }
             }
         }

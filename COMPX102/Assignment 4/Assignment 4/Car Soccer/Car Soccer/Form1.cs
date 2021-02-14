@@ -14,44 +14,55 @@ namespace Car_Soccer
     public partial class Form1 : Form
     {
         private List<Goal> _goals;
-        private List<Car> _cars;
+        private List<Player> _players;
+        private List<Computer> _computers;
         private bool keyPress;
-        protected Ball _ball;
+        private Ball _ball;
         private int redScore;
         private int blueScore;
+        
         public Form1()
         {
             InitializeComponent();
             _goals = new List<Goal>();
-            _cars = new List<Car>();
-            _cars.Add(new Player(pictureBox1.Width / 4, pictureBox1.Height / 2, Team.Blue));
+            _players = new List<Player>();
+            _computers = new List<Computer>();
+            _players.Add(new Player(pictureBox1.Width / 4, pictureBox1.Height / 2, Team.Blue));
+            _computers.Add(new Computer((pictureBox1.Width / 4) * 3, pictureBox1.Height / 2, Team.Red));
             _goals.Add(new Goal(30, pictureBox1.Height / 2, 60, 150, Team.Blue));
             _goals.Add(new Goal(pictureBox1.Width - 30, pictureBox1.Height / 2, 60, 150, Team.Red));
             _ball = new Ball(pictureBox1);
             keyPress = false;
             redScore = 0;
             blueScore = 0;
+            MessageBox.Show("Welcome to my Game\nYou are the blue ball\nYour goal is to hit the gold ball into the goal\nOn the right side of the screen\nHowever you are facing a computer player\nTo control your ball you must push and hold the space key\nWhile holding said key you will deccelerate and turn\nEvery time you press the key you will turn in the opposite direction\nWhile the key is released you will accelerate\nGood Luck and Have Fun");
         }
 
         private void AnimationTimerTick(object sender, EventArgs e)
         {
-            foreach(Car car in _cars)
+            foreach (Player car in _players)
             {
                 car.Advance();
                 car.WallCollide(pictureBox1);
                 car.IfOOB(pictureBox1);
             }
-            _ball.IsCollide(_cars);
+            foreach (Computer car in _computers)
+            {
+                car.Advance(_ball);
+                car.WallCollide(pictureBox1);
+                car.IfOOB(pictureBox1);
+            }
+            _ball.IsCollide(_players,_computers);
             _ball.Advance();
             _ball.IfOOB(pictureBox1);
             switch (_ball.IsInGoal(_goals))
             {
                 case Team.Red:
-                    blueScore += 1;
+                    redScore += 1;
                     _ball.Reset(pictureBox1);
                     break;
                 case Team.Blue:
-                    redScore += 1;
+                    blueScore += 1;
                     _ball.Reset(pictureBox1);
                     break;
                 default:
@@ -67,13 +78,14 @@ namespace Car_Soccer
                 GameEnd(Team.Blue);
             }
             pictureBox1.Refresh();
+            
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (!keyPress)
             {
-                foreach (Player player in _cars)
+                foreach (Player player in _players)
                 {
                     player.InputDown(e);
                 }
@@ -84,7 +96,7 @@ namespace Car_Soccer
         {
             if (keyPress)
             {
-                foreach (Player player in _cars)
+                foreach (Player player in _players)
                 {
                     player.InputUp(e);
                 }
@@ -94,7 +106,11 @@ namespace Car_Soccer
         private void Draw(Graphics paper)
         {
             DrawField(paper);
-            foreach (Car car in _cars)
+            foreach (Car car in _players)
+            {
+                car.Draw(paper);
+            }
+            foreach (Car car in _computers)
             {
                 car.Draw(paper);
             }
@@ -139,5 +155,7 @@ namespace Car_Soccer
         {
             return new PointF(_ball.X, _ball.Y);
         }
+
+        
     }
 }

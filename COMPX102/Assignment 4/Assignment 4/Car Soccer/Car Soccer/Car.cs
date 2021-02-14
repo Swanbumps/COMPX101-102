@@ -13,7 +13,7 @@ namespace Car_Soccer
         Blue,
         None
     }
-    
+
     class Car : Sprite
     {
         internal Team _team;

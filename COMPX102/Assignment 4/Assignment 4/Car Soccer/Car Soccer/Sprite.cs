@@ -77,14 +77,14 @@ namespace Car_Soccer
                     _angle = 270 - (_angle - 270);
                 }
             }
-            else if (rect.IntersectsWith(new RectangleF(55, 0, 0, pictureBox.Height)))
+            else if (rect.IntersectsWith(new RectangleF(60, 0, 0, pictureBox.Height)))
             {
                 if (_angle > 180 && _angle < 360)
                 {
                     _angle = 180 - (_angle - 180);
                 }
             }
-            else if (rect.IntersectsWith(new RectangleF(pictureBox.Width-50, 0, pictureBox.Width, pictureBox.Height)))
+            else if (rect.IntersectsWith(new RectangleF(pictureBox.Width-60, 0, pictureBox.Width, pictureBox.Height)))
             {
                 if (_angle < 180 && _angle > 0)
                 {
