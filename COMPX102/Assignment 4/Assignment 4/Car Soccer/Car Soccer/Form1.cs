@@ -28,6 +28,7 @@ namespace Car_Soccer
             foreach(Car car in _cars)
             {
                 car.Advance();
+                car.WallCollide(pictureBox1);
                 toolStripStatusLabel1.Text = car._turnDirection.ToString();
                 toolStripStatusLabel2.Text = car._angle.ToString();
                 toolStripStatusLabel3.Text = car._input.ToString();
@@ -43,13 +44,18 @@ namespace Car_Soccer
                 {
                     player.InputDown(e);
                 }
+                keyPress = true;
             }
         }
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            foreach (Player player in _cars)
+            if (keyPress)
             {
-                player.InputUp(e);
+                foreach (Player player in _cars)
+                {
+                    player.InputUp(e);
+                }
+                keyPress = false;
             }
         }
         private void Draw(Graphics paper)
@@ -68,6 +74,6 @@ namespace Car_Soccer
         {
             return degrees / 180 * Math.PI;
         }
-
+        
     }
 }
