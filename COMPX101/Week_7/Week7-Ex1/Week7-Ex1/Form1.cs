@@ -35,7 +35,16 @@ namespace Week7_Ex1
 
         private void MenuDrawPlanner_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Graphics paper = pictureBoxDisplay.CreateGraphics();
+                Pen Pen1 = new Pen(Color.Black);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MethodClear();
+            }
         }
 
         private void menuClear_Click(object sender, EventArgs e)
@@ -45,7 +54,7 @@ namespace Week7_Ex1
 
         private void menuExit_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         public void MethodDrawRow()
@@ -55,7 +64,9 @@ namespace Week7_Ex1
 
         public void MethodClear()
         {
-
+            pictureBoxDisplay.Refresh();
+            textBoxHours.Clear();
+            textBoxHours.Focus();
         }
         
     }
