@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBoxDisplay = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxHours = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuDrawPlanner = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,12 +48,12 @@
             this.pictureBoxDisplay.TabIndex = 1;
             this.pictureBoxDisplay.TabStop = false;
             // 
-            // textBox1
+            // textBoxHours
             // 
-            this.textBox1.Location = new System.Drawing.Point(729, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(108, 20);
-            this.textBox1.TabIndex = 5;
+            this.textBoxHours.Location = new System.Drawing.Point(729, 27);
+            this.textBoxHours.Name = "textBoxHours";
+            this.textBoxHours.Size = new System.Drawing.Size(108, 20);
+            this.textBoxHours.TabIndex = 5;
             // 
             // menuStrip1
             // 
@@ -101,7 +101,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(907, 739);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxHours);
             this.Controls.Add(this.pictureBoxDisplay);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -118,7 +118,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBoxDisplay;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxHours;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem MenuDrawPlanner;
